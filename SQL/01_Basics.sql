@@ -1,25 +1,34 @@
--- ==============================
--- DATABASE CREATION
--- ==============================
-
+-- CREATING DATABASE
 CREATE DATABASE college;
 
+-- DELETING DATABASE
+DROP DATABASE college;
+
+-- CREATING DATABASE USING "IF NOT EXIST"
+CREATE DATABASE IF NOT EXISTS college;
+
+-- DELETING DATABASE USING "IF EXIST"
+DROP DATABASE IF EXISTS college;
+
+
+
+-- DDL COMMANDS FOR TABLES
 USE college;
 
-
--- ==============================
--- TABLE CREATION
--- ==============================
-
-CREATE TABLE students (
-    id INT,
-    name VARCHAR(50),
-    age INT
+-- 1.CREATE  TABLE
+CREATE TABLE students(
+stu_id INT,
+name VARCHAR(20),
+age INT,
+course VARCHAR(20)
 );
 
-
--- ==============================
--- RETRIEVING DATA
--- ==============================
-
+-- ADDING VALUES TO THE TABLE
+INSERT INTO students VALUES (1,'Ayush kumar singh',22,'B.tech');
 SELECT * FROM students;
+
+-- 2.TRUNCATE TABLE (TO REMOVE THE DATA OF TABLE)
+TRUNCATE TABLE students;
+
+-- 3.DROP TABLE (IT IS USED TO COMPLETELY REMOVE THE TABLE )
+DROP TABLE students;
