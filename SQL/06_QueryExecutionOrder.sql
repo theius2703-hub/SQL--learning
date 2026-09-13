@@ -1,0 +1,26 @@
+-- QUERY EXECUTION ORDER
+
+/*
+QUERIES WRITING ORDER
+SELECT ...
+FROM ...
+WHERE ...
+GROUP BY ...
+HAVING ...
+ORDER BY ...
+LIMIT ...
+
+LOGICAL EXECUTION 
+1. FROM
+  (JOIN)
+2. WHERE
+3. GROUP BY
+4. HAVING
+5. SELECT
+6. DISTINCT
+7. ORDER BY
+8. LIMIT 
+
+
+TRICK: From Where Groups Have Selected Data Ordered Limited
+*/
